@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/chatroom_button_refresh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chatroomlist"
+        android:id="@+id/chatroom_textView_chatroomlist"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/chatroom_listView" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/chatroom_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@+id/chatroom_listView"
+            app:layout_anchorGravity="bottom|right|end"
+            android:src="@drawable/add_silver"
+            android:clickable="true"
+            android:layout_gravity="bottom|right"
+            app:backgroundTint="#607ce2" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</LinearLayout>

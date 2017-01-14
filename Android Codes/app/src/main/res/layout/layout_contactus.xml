@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_gravity="left"
+        android:paddingLeft="30dp"
+        android:paddingTop="35dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="35dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="version: beta v1.0.2 \n2016 Spring"
+        android:layout_gravity="left"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dip"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authors:"
+        android:layout_gravity="left"
+        android:paddingLeft="30dp"
+        android:paddingTop="35dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="35dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linpeng LYU(linpengl) \nYilei CHU(ychu1) \nJialu CHEN(jialuc)"
+        android:layout_gravity="left"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="25dip"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_margin="30dp"
+        android:textSize="25dip"
+        android:id="@+id/contactus_btnBack"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

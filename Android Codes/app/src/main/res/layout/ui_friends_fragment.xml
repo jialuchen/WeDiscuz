@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/friend_button_refresh" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friendlist"
+            android:id="@+id/friends_textView_friendList"
+            android:textSize="20sp"
+            android:paddingBottom="10dp" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/friends_listView" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/friends_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_margin="@dimen/fab_margin"
+                app:layout_anchor="@+id/friends_listView"
+                app:layout_anchorGravity="bottom|right|end"
+                android:src="@drawable/add_silver"
+                android:clickable="true"
+                android:layout_gravity="bottom|right"
+                app:backgroundTint="#607ce2" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>

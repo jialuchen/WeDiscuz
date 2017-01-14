@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/groupchat_local_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow" />
+
+
+    <ImageView
+        android:id="@+id/groupchat_local_voice_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_room_bg" />
+
+    <LinearLayout
+        android:id="@+id/groupchat_remote_views"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/groupchat_wrapper_session_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_room_bg_talk_time"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_toStartOf="@+id/groupchat_app_notification">
+
+        <TextView
+            android:id="@+id/groupchat_stat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/groupchat_stat_bytes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupchat_roomID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="11111"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/groupchat_app_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/room_prepare"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/groupchat_button_hungup"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/ic_room_button_red" />
+
+    <Button
+        android:id="@+id/groupchat_button_mute"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_room_button_mute"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/groupchat_button_unmute"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_room_button_unmute"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/groupchat_button_voice"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_room_button_voice"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/groupchat_button_video"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_room_button_video"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:id="@+id/groupchat_button_switch"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/groupchat_remote_views"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_room_button_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="false"
+        android:layout_marginRight="50dp" />
+
+</RelativeLayout>

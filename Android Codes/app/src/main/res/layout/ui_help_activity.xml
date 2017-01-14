@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Instruction:"
+        android:id="@+id/help_textView_help" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Log in: use your email and password to login. Note: each email can only register one account."
+                android:id="@+id/help_textView_first" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Add friend: Go to Friend page, and search for a user by email to add him/her as your friend."
+                android:id="@+id/help_textView_second"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Start video/audio chat:  For individual chat: just click on that friend&apos;s name and choose chatting with him. For group chat: enter a chatroom, and start a chat by sending requests to all members in the room. After any member accepts that request, he/she will join the chatting. "
+                android:id="@+id/help_textView_third"
+                android:paddingTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
